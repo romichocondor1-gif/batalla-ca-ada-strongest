@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1c2117">
+<meta name="description" content="Reconstrucción histórica por etapas de la Batalla de Cañada Strongest, 10–25 de mayo de 1934.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<title>Batalla de Cañada Strongest | 1934</title>
+
+<style>
+/* =========================================================
+   CAÑADA STRONGEST — WEB QR / MOBILE FIRST
+   ========================================================= */
+
+:root{
+  --sand:#cdb98a;
+  --sand-light:#efe6cf;
+  --sand-dark:#a89468;
+  --paper:#f2ead5;
+  --paper-dark:#d9cdae;
+  --olive:#4b5636;
+  --olive-dark:#303820;
+  --canvas:#171b14;
+  --canvas-2:#20261a;
+  --ink:#241f16;
+  --blue:#3a6b9f;
+  --blue-light:#6d96bd;
+  --red:#c9573d;
+  --red-dark:#8f3425;
+  --gold:#c19a45;
+  --white:#fffaf0;
+  --shadow:0 12px 35px rgba(0,0,0,.30);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 20% 0%,rgba(255,255,255,.04),transparent 35%),
+    radial-gradient(circle at 90% 80%,rgba(255,255,255,.025),transparent 35%),
+    var(--canvas);
+  color:var(--paper);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+img,svg{
+  max-width:100%;
+}
+
+button{
+  font:inherit;
+}
+
+.container{
+  width:min(100% - 28px,900px);
+  margin:auto;
+}
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(23,27,20,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(193,154,69,.35);
+}
+
+.topbar-inner{
+  min-height:52px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.brand{
+  color:var(--gold);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.progress{
+  flex:1;
+  max-width:180px;
+  height:4px;
+  background:rgba(255,255,255,.12);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.progress-bar{
+  width:16.66%;
+  height:100%;
+  background:var(--gold);
+  transition:width .35s ease;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+  min-height:92svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:60px 18px 50px;
+  background:
+    linear-gradient(rgba(20,24,17,.35),rgba(20,24,17,.88)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,.018) 0 2px,
+      transparent 2px 7px
+    );
+}
+
+.hero-content{
+  width:min(100%,720px);
+}
+
+.eyebrow{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(38px,11vw,76px);
+  line-height:1;
+  letter-spacing:-.035em;
+  text-shadow:3px 4px 0 rgba(0,0,0,.35);
+}
+
+.hero-subtitle{
+  margin:22px auto 0;
+  color:var(--sand);
+  font-size:14px;
+  max-width:600px;
+}
+
+.date-badge{
+  display:inline-block;
+  margin-top:24px;
+  padding:9px 16px;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+  box-shadow:4px 5px 0 rgba(0,0,0,.25);
+  transform:rotate(-1deg);
+}
+
+.start-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:54px;
+  margin-top:30px;
+  padding:0 28px;
+  border:1px solid var(--gold);
+  border-radius:4px;
+  color:var(--ink);
+  background:var(--gold);
+  font-weight:800;
+  letter-spacing:.05em;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+}
+
+.start-btn:active{
+  transform:translateY(1px);
+}
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+section{
+  padding:54px 0;
+}
+
+.section-label{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+h2{
+  margin:0 0 20px;
+  color:var(--paper);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(27px,7vw,38px);
+  line-height:1.15;
+}
+
+.lead{
+  color:var(--paper-dark);
+  font-size:16px;
+}
+
+/* =========================================================
+   CONTEXT
+   ========================================================= */
+
+.context{
+  padding-top:44px;
+}
+
+.context-card{
+  padding:22px;
+  border-left:4px solid var(--olive);
+  background:
+    linear-gradient(135deg,rgba(75,86,54,.32),rgba(75,86,54,.10));
+  box-shadow:var(--shadow);
+}
+
+.context-card p{
+  margin:0;
+  color:var(--paper-dark);
+  font-size:15px;
+}
+
+.key-fact{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:18px;
+}
+
+.fact{
+  padding:16px 12px;
+  text-align:center;
+  background:rgba(0,0,0,.2);
+  border:1px solid rgba(193,154,69,.18);
+}
+
+.fact strong{
+  display:block;
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:25px;
+}
+
+.fact span{
+  display:block;
+  margin-top:3px;
+  color:var(--sand);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+/* =========================================================
+   LEGEND
+   ========================================================= */
+
+.legend{
+  background:rgba(0,0,0,.14);
+}
+
+.legend-grid{
+  display:grid;
+  gap:9px;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px;
+  border:1px solid rgba(193,154,69,.18);
+  background:rgba(255,255,255,.025);
+}
+
+.legend-icon{
+  width:44px;
+  min-width:44px;
+  text-align:center;
+  font-weight:900;
+}
+
+.blue{
+  color:var(--blue-light);
+}
+
+.red{
+  color:var(--red);
+}
+
+.legend-item span{
+  color:var(--paper-dark);
+  font-size:13px;
+}
+
+/* =========================================================
+   TIMELINE NAV
+   ========================================================= */
+
+.timeline-nav{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:4px 0 12px;
+  scrollbar-width:none;
+}
+
+.timeline-nav::-webkit-scrollbar{
+  display:none;
+}
+
+.timeline-btn{
+  flex:0 0 auto;
+  min-height:42px;
+  padding:0 15px;
+  border:1px solid rgba(193,154,69,.35);
+  border-radius:3px;
+  color:var(--sand);
+  background:rgba(0,0,0,.2);
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.timeline-btn.active{
+  color:var(--ink);
+  background:var(--gold);
+  border-color:var(--gold);
+}
+
+/* =========================================================
+   STAGES
+   ========================================================= */
+
+.stage{
+  margin-top:22px;
+  border:1px solid rgba(193,154,69,.30);
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.025),transparent);
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  overflow:hidden;
+}
+
+.stage-header{
+  padding:22px 18px 14px;
+}
+
+.stage-number{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:40px;
+  line-height:1;
+}
+
+.stage-title{
+  margin-top:5px;
+  color:var(--paper);
+  font-family:Georgia,serif;
+  font-size:23px;
+  line-height:1.15;
+}
+
+.stage-date{
+  margin-top:6px;
+  color:var(--sand);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+/* MAP */
+
+.map-wrap{
+  position:relative;
+  margin:4px 12px 0;
+  border:1px solid var(--sand-dark);
+  background:var(--sand);
+  overflow:hidden;
+}
+
+.map-label{
+  position:absolute;
+  top:8px;
+  left:8px;
+  z-index:2;
+  padding:5px 8px;
+  color:var(--ink);
+  background:rgba(239,230,207,.9);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.map-wrap svg{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* TEXT */
+
+.stage-body{
+  padding:20px 18px 22px;
+}
+
+.kicker{
+  display:block;
+  margin-bottom:8px;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.stage-body p{
+  margin:0;
+  color:var(--paper-dark);
+  font-size:15px;
+}
+
+.highlight{
+  margin-top:18px;
+  padding:14px;
+  border-left:3px solid var(--gold);
+  background:rgba(193,154,69,.08);
+  color:var(--paper);
+  font-size:13px;
+}
+
+/* =========================================================
+   STAGE NAVIGATION
+   ========================================================= */
+
+.stage-navigation{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:18px;
+}
+
+.nav-btn{
+  min-height:48px;
+  padding:8px 10px;
+  border:1px solid rgba(193,154,69,.3);
+  border-radius:3px;
+  color:var(--paper);
+  background:rgba(0,0,0,.2);
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.nav-btn.next{
+  color:var(--ink);
+  background:var(--gold);
+}
+
+/* =========================================================
+   RESULT
+   ========================================================= */
+
+.result{
+  background:
+    linear-gradient(rgba(181,67,47,.08),rgba(181,67,47,.02));
+}
+
+.result-card{
+  padding:22px;
+  border:1px solid rgba(181,67,47,.35);
+}
+
+.result-card > p{
+  margin:0;
+  color:var(--paper-dark);
+  font-size:15px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:20px;
+}
+
+.stat{
+  padding:18px 8px;
+  text-align:center;
+  background:rgba(0,0,0,.22);
+}
+
+.stat-number{
+  color:var(--paper);
+  font-family:Georgia,serif;
+  font-size:30px;
+  line-height:1;
+}
+
+.stat-label{
+  margin-top:7px;
+  color:var(--sand);
+  font-size:9px;
+  line-height:1.35;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+/* =========================================================
+   QR / SHARE SECTION
+   ========================================================= */
+
+.share{
+  text-align:center;
+  padding-bottom:70px;
+}
+
+.share-card{
+  padding:28px 20px;
+  border:1px solid rgba(193,154,69,.25);
+  background:rgba(255,255,255,.025);
+}
+
+.share-icon{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.share-card h2{
+  font-size:28px;
+}
+
+.share-card p{
+  color:var(--paper-dark);
+  font-size:14px;
+}
+
+.share-button{
+  min-height:50px;
+  padding:0 22px;
+  border:1px solid var(--gold);
+  border-radius:3px;
+  color:var(--ink);
+  background:var(--gold);
+  font-weight:800;
+  cursor:pointer;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+  padding:25px 18px 40px;
+  border-top:1px solid rgba(193,154,69,.2);
+  color:var(--sand-dark);
+  text-align:center;
+  font-size:10px;
+  line-height:1.6;
+}
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media(min-width:700px){
+
+  .container{
+    width:min(100% - 50px,900px);
+  }
+
+  .hero{
+    min-height:80vh;
+  }
+
+  .context-card{
+    padding:28px;
+  }
+
+  .key-fact{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .legend-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stage-header{
+    padding:26px 24px 18px;
+  }
+
+  .stage-title{
+    font-size:28px;
+  }
+
+  .map-wrap{
+    margin-left:24px;
+    margin-right:24px;
+  }
+
+  .stage-body{
+    padding:24px;
+  }
+
+  .stats{
+    grid-template-columns:repeat(4,1fr);
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto;
+  }
+
+  *{
+    transition:none!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+     BARRA SUPERIOR
+     ======================================================= -->
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">Cañada Strongest · 1934</div>
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- =======================================================
+     PORTADA
+     ======================================================= -->
+
+<header class="hero" id="inicio">
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      Guerra del Chaco · Ejército de Bolivia
+    </div>
+
+    <h1>
+      Batalla de<br>
+      Cañada Strongest
+    </h1>
+
+    <p class="hero-subtitle">
+      Reconstrucción histórica esquemática de la batalla
+      y de sus principales movimientos por etapas.
+    </p>
+
+    <div class="date-badge">
+      10 — 25 DE MAYO DE 1934
+    </div>
+
+    <br>
+
+    <button class="start-btn"
+      onclick="document.getElementById('contexto').scrollIntoView({behavior:'smooth'})">
+      COMENZAR RECORRIDO ↓
+    </button>
+
+  </div>
+</header>
+
+
+<!-- =======================================================
+     CONTEXTO
+     ======================================================= -->
+
+<section class="context" id="contexto">
+  <div class="container">
+
+    <div class="section-label">01 · Contexto</div>
+
+    <h2>La trampa de Cañada Strongest</h2>
+
+    <div class="context-card">
+
+      <p>
+        A fines de abril de 1934, el Ejército paraguayo preparó
+        una ofensiva contra el Segundo Cuerpo boliviano.
+        Bolivia detectó la maniobra y el coronel Ángel Rodríguez
+        diseñó una operación de engaño: permitir el avance paraguayo
+        para después cerrar sus vías de retirada.
+      </p>
+
+      <div class="key-fact">
+
+        <div class="fact">
+          <strong>10</strong>
+          <span>Inicio</span>
+        </div>
+
+        <div class="fact">
+          <strong>25</strong>
+          <span>Fin</span>
+        </div>
+
+        <div class="fact">
+          <strong>5</strong>
+          <span>Etapas</span>
+        </div>
+
+        <div class="fact">
+          <strong>1934</strong>
+          <span>Año</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =======================================================
+     SIMBOLOGÍA
+     ======================================================= -->
+
+<section class="legend" id="simbolos">
+  <div class="container">
+
+    <div class="section-label">02 · Cómo leer los mapas</div>
+
+    <h2>Simbología</h2>
+
+    <div class="legend-grid">
+
+      <div class="legend-item">
+        <div class="legend-icon blue">▣</div>
+        <span>
+          <b>Azul:</b> unidades y movimientos del Ejército boliviano.
+        </span>
+      </div>
+
+      <div class="legend-item">
+        <div class="legend-icon red">▣</div>
+        <span>
+          <b>Rojo:</b> unidades y movimientos del Ejército paraguayo.
+        </span>
+      </div>
+
+      <div class="legend-item">
+        <div class="legend-icon blue">➜</div>
+        <span>
+          Flecha azul: avance o maniobra boliviana.
+        </span>
+      </div>
+
+      <div class="legend-item">
+        <div class="legend-icon red">➜</div>
+        <span>
+          Flecha roja: avance o retirada paraguaya.
+        </span>
+      </div>
+
+      <div class="legend-item">
+        <div class="legend-icon blue">⌒</div>
+        <span>
+          Línea azul punteada: cerco o movimiento de cierre.
+        </span>
+      </div>
+
+      <div class="legend-item">
+        <div class="legend-icon">🌿</div>
+        <span>
+          Verde: monte chaqueño. Franja clara: camino El Lóbrego.
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =======================================================
+     ETAPAS
+     ======================================================= -->
+
+<section id="batalla">
+  <div class="container">
+
+    <div class="section-label">03 · Desarrollo</div>
+
+    <h2>La batalla por etapas</h2>
+
+    <div class="timeline-nav">
+
+      <button class="timeline-btn active" onclick="goToStage(1)">
+        01 · AVANCE
+      </button>
+
+      <button class="timeline-btn" onclick="goToStage(2)">
+        02 · TENAZA
+      </button>
+
+      <button class="timeline-btn" onclick="goToStage(3)">
+        03 · ESTIGARRIBIA
+      </button>
+
+      <button class="timeline-btn" onclick="goToStage(4)">
+        04 · FUGA
+      </button>
+
+      <button class="timeline-btn" onclick="goToStage(5)">
+        05 · RENDICIÓN
+      </button>
+
+    </div>
+
+
+<!-- =======================================================
+     ETAPA 1
+     ======================================================= -->
+
+<article class="stage" id="stage1">
+
+  <div class="stage-header">
+    <div class="stage-number">01</div>
+
+    <div class="stage-title">
+      El avance paraguayo hacia la trampa
+    </div>
+
+    <div class="stage-date">
+      10 — 15 de mayo de 1934
+    </div>
+  </div>
+
+  <div class="map-wrap">
+
+    <div class="map-label">
+      Movimiento esquemático
+    </div>
+
+    <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
+
+      <rect width="900" height="460" fill="#cdb98a"/>
+
+      <polygon
+        points="380,0 420,0 460,460 340,460"
+        fill="#e2d6b5"/>
+
+      <g fill="#7c8f5a" opacity=".8">
+        <circle cx="120" cy="80" r="16"/>
+        <circle cx="180" cy="120" r="20"/>
+        <circle cx="90" cy="200" r="18"/>
+        <circle cx="200" cy="260" r="14"/>
+        <circle cx="140" cy="340" r="18"/>
+        <circle cx="230" cy="390" r="16"/>
+        <circle cx="700" cy="90" r="18"/>
+        <circle cx="760" cy="150" r="16"/>
+        <circle cx="640" cy="220" r="20"/>
+        <circle cx="720" cy="300" r="16"/>
+        <circle cx="660" cy="380" r="18"/>
+      </g>
+
+      <!-- 8ª BOL -->
+      <rect x="410" y="330" width="80" height="42"
+        fill="none" stroke="#3a6b9f" stroke-width="3"/>
+
+      <text x="450" y="326"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#3a6b9f">XX</text>
+
+      <text x="450" y="356"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#1f3a5c"
+        font-weight="700">8ª BOL</text>
+
+      <!-- 3ª BOL -->
+      <rect x="560" y="60" width="80" height="42"
+        fill="none" stroke="#3a6b9f" stroke-width="3"/>
+
+      <text x="600" y="56"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#3a6b9f">XX</text>
+
+      <text x="600" y="86"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#1f3a5c"
+        font-weight="700">3ª BOL</text>
+
+      <!-- 7ª PY -->
+      <rect x="250" y="60" width="80" height="42"
+        fill="none" stroke="#c9573d" stroke-width="3"/>
+
+      <text x="290" y="56"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#c9573d">XX</text>
+
+      <text x="290" y="86"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#8f3425"
+        font-weight="700">7ª PY</text>
+
+      <!-- 2ª PY -->
+      <rect x="120" y="150" width="80" height="42"
+        fill="none" stroke="#c9573d" stroke-width="3"/>
+
+      <text x="160" y="146"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#c9573d">XX</text>
+
+      <text x="160" y="176"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#8f3425"
+        font-weight="700">2ª PY</text>
+
+      <!-- arrows -->
+      <path d="M330 90 L400 220"
+        stroke="#c9573d" stroke-width="5" fill="none"/>
+
+      <polygon points="392,200 415,228 380,232"
+        fill="#c9573d"/>
+
+      <path d="M200 170 L330 300"
+        stroke="#c9573d" stroke-width="5" fill="none"/>
+
+      <polygon points="315,278 340,308 305,308"
+        fill="#c9573d"/>
+
+    </svg>
+  </div>
+
+  <div class="stage-body">
+
+    <span class="kicker">
+      Movimiento inicial
+    </span>
+
+    <p>
+      El 10 de mayo, unos 5.500 hombres de la 7ª y 2ª
+      Divisiones paraguayas avanzan por el claro que separaba
+      a los dos cuerpos bolivianos, dirigiéndose hacia la
+      8ª División boliviana.
+    </p>
+
+    <div class="highlight">
+      <b>Clave:</b> lo que parecía un retroceso boliviano
+      formaba parte de una maniobra destinada a atraer
+      al enemigo hacia su retaguardia.
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- =======================================================
+     ETAPA 2
+     ======================================================= -->
+
+<article class="stage" id="stage2">
+
+  <div class="stage-header">
+    <div class="stage-number">02</div>
+
+    <div class="stage-title">
+      Bolivia cierra la tenaza
+    </div>
+
+    <div class="stage-date">
+      18 — 19 de mayo de 1934
+    </div>
+  </div>
+
+  <div class="map-wrap">
+
+    <div class="map-label">
+      Cierre del movimiento
+    </div>
+
+    <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
+
+      <rect width="900" height="460" fill="#cdb98a"/>
+
+      <polygon
+        points="380,0 420,0 460,460 340,460"
+        fill="#e2d6b5"/>
+
+      <g fill="#7c8f5a" opacity=".8">
+        <circle cx="120" cy="80" r="16"/>
+        <circle cx="180" cy="120" r="20"/>
+        <circle cx="90" cy="200" r="18"/>
+        <circle cx="700" cy="90" r="18"/>
+        <circle cx="760" cy="150" r="16"/>
+        <circle cx="640" cy="220" r="20"/>
+        <circle cx="140" cy="340" r="18"/>
+        <circle cx="720" cy="330" r="16"/>
+      </g>
+
+      <!-- 8ª BOL -->
+      <rect x="410" y="330" width="80" height="42"
+        fill="none" stroke="#3a6b9f" stroke-width="3"/>
+
+      <text x="450" y="326"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#3a6b9f">XX</text>
+
+      <text x="450" y="356"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#1f3a5c"
+        font-weight="700">8ª BOL</text>
+
+      <!-- 9ª BOL -->
+      <rect x="420" y="410" width="90" height="40"
+        fill="none" stroke="#3a6b9f" stroke-width="3"/>
+
+      <text x="465" y="406"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#3a6b9f">XX</text>
+
+      <text x="465" y="435"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="12"
+        fill="#1f3a5c"
+        font-weight="700">9ª BOL</text>
+
+      <!-- columns -->
+      <path d="M465 405 L340 250"
+        stroke="#3a6b9f" stroke-width="5" fill="none"/>
+
+      <polygon points="352,265 328,240 328,275"
+        fill="#3a6b9f"/>
+
+      <path d="M500 405 L620 220"
+        stroke="#3a6b9f" stroke-width="5" fill="none"/>
+
+      <polygon points="608,240 632,213 597,224"
+        fill="#3a6b9f"/>
+
+      <!-- RI1/RI4 -->
+      <rect x="560" y="55" width="90" height="36"
+        fill="none" stroke="#3a6b9f" stroke-width="2.5"/>
+
+      <text x="605" y="52"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="11"
+        fill="#1f3a5c"
+        font-weight="700">RI-1 / RI-4</text>
+
+      <path d="M600 95 L500 200"
+        stroke="#3a6b9f"
+        stroke-width="4"
+        fill="none"
+        stroke-dasharray="2 2"/>
+
+      <!-- Paraguayan units -->
+      <rect x="250" y="130" width="80" height="42"
+        fill="none" stroke="#c9573d" stroke-width="3"/>
+
+      <text x="290" y="126"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#c9573d">XX</text>
+
+      <text x="290" y="156"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#8f3425"
+        font-weight="700">2ª PY</text>
+
+      <rect x="230" y="220" width="80" height="42"
+        fill="none" stroke="#c9573d" stroke-width="3"/>
+
+      <text x="270" y="216"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="14"
+        fill="#c9573d">XX</text>
+
+      <text x="270" y="246"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#8f3425"
+        font-weight="700">7ª PY</text>
+
+    </svg>
+  </div>
+
+  <div class="stage-body">
+
+    <span class="kicker">
+      La sorpresa boliviana
+    </span>
+
+    <p>
+      El 18 de mayo, la 8ª División boliviana endurece su
+      resistencia. El 19 de mayo, la reforzada 9ª División
+      avanza en dos columnas y corta el camino El Lóbrego
+      en la retaguardia paraguaya.
+    </p>
+
+    <div class="highlight">
+      <b>Movimiento decisivo:</b> los regimientos RI-1
+      “Jordán” y RI-4 “Loa” avanzan desde el norte para
+      completar el cierre.
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- =======================================================
+     ETAPA 3
+     ======================================================= -->
+
+<article class="stage" id="stage3">
+
+  <div class="stage-header">
+
+    <div class="stage-number">03</div>
+
+    <div class="stage-title">
+      El episodio del batallón Estigarribia
+    </div>
+
+    <div class="stage-date">
+      19 — 20 de mayo de 1934
+    </div>
+
+  </div>
+
+  <div class="map-wrap">
+
+    <div class="map-label">
+      El batallón queda encerrado
+    </div>
+
+    <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
+
+      <rect width="900" height="460" fill="#cdb98a"/>
+
+      <polygon
+        points="380,0 420,0 460,460 340,460"
+        fill="#e2d6b5"/>
+
+      <g fill="#7c8f5a" opacity=".8">
+        <circle cx="120" cy="120" r="18"/>
+        <circle cx="700" cy="120" r="18"/>
+        <circle cx="150" cy="330" r="16"/>
+        <circle cx="700" cy="340" r="18"/>
+      </g>
+
+      <!-- Rivas -->
+      <rect x="430" y="150" width="70" height="34"
+        fill="none" stroke="#3a6b9f" stroke-width="2.5"/>
+
+      <text x="465" y="146"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10.5"
+        fill="#1f3a5c"
+        font-weight="700">
+        Col. Rivas — km 60
+      </text>
+
+      <!-- Rocha -->
+      <rect x="430" y="260" width="70" height="34"
+        fill="none" stroke="#3a6b9f" stroke-width="2.5"/>
+
+      <text x="465" y="256"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10.5"
+        fill="#1f3a5c"
+        font-weight="700">
+        Col. Rocha — km 57
+      </text>
+
+      <!-- Estigarribia -->
+      <rect x="440" y="200" width="50" height="30"
+        fill="none"
+        stroke="#c9573d"
+        stroke-width="2.5"
+        stroke-dasharray="3 2"/>
+
+      <text x="465" y="197"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="9"
+        fill="#c9573d">II</text>
+
+      <text x="465" y="245"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10.5"
+        fill="#8f3425"
+        font-weight="700">
+        Btn. Estigarribia
+      </text>
+
+      <text x="465" y="120"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10.5"
+        fill="#555"
+        font-style="italic">
+        RI-16 enviado a desalojar
+      </text>
+
+      <path d="M465 120 L465 148"
+        stroke="#c9573d"
+        stroke-width="3"/>
+
+      <polygon points="459,140 465,152 471,140"
+        fill="#c9573d"/>
+
+      <!-- encirclement -->
+      <ellipse cx="465" cy="215"
+        rx="55" ry="70"
+        fill="none"
+        stroke="#3a6b9f"
+        stroke-width="2.5"
+        stroke-dasharray="5 4"/>
+
+    </svg>
+  </div>
+
+  <div class="stage-body">
+
+    <span class="kicker">
+      Un imprevisto que cambia todo
+    </span>
+
+    <p>
+      El mando paraguayo envía unos 200 hombres del RI-16,
+      bajo el capitán Joel Estigarribia, para desalojar a
+      la fuerza boliviana del kilómetro 60. Sin embargo,
+      otra columna boliviana corta el camino en el kilómetro 57.
+    </p>
+
+    <div class="highlight">
+      <b>Resultado:</b> el batallón Estigarribia queda
+      atrapado entre las dos fuerzas bolivianas.
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- =======================================================
+     ETAPA 4
+     ======================================================= -->
+
+<article class="stage" id="stage4">
+
+  <div class="stage-header">
+
+    <div class="stage-number">04</div>
+
+    <div class="stage-title">
+      La fuga parcial del grueso paraguayo
+    </div>
+
+    <div class="stage-date">
+      20 — 22 de mayo de 1934
+    </div>
+
+  </div>
+
+  <div class="map-wrap">
+
+    <div class="map-label">
+      La tenaza pierde tiempo
+    </div>
+
+    <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
+
+      <rect width="900" height="460" fill="#cdb98a"/>
+
+      <polygon
+        points="380,0 420,0 460,460 340,460"
+        fill="#e2d6b5"/>
+
+      <g fill="#7c8f5a" opacity=".8">
+        <circle cx="120" cy="120" r="18"/>
+        <circle cx="700" cy="120" r="18"/>
+        <circle cx="150" cy="330" r="16"/>
+        <circle cx="700" cy="340" r="18"/>
+      </g>
+
+      <!-- 7ª PY -->
+      <rect x="230" y="90" width="80" height="40"
+        fill="none" stroke="#c9573d" stroke-width="3"/>
+
+      <text x="270" y="86"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#c9573d">XX</text>
+
+      <text x="270" y="116"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="12"
+        fill="#8f3425"
+        font-weight="700">
+        7ª PY
+      </text>
+
+      <path d="M310 110 Q160 160 130 300"
+        stroke="#c9573d"
+        stroke-width="4"
+        fill="none"
+        stroke-dasharray="6 3"/>
+
+      <polygon points="118,280 122,312 145,296"
+        fill="#c9573d"/>
+
+      <text x="150" y="200"
+        font-family="Arial"
+        font-size="10.5"
+        fill="#7a3a20"
+        font-style="italic">
+        picada nueva · 14 km
+      </text>
+
+      <!-- 2ª PY -->
+      <rect x="600" y="70" width="80" height="40"
+        fill="none" stroke="#c9573d" stroke-width="3"/>
+
+      <text x="640" y="66"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#c9573d">XX</text>
+
+      <text x="640" y="96"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="12"
+        fill="#8f3425"
+        font-weight="700">
+        2ª PY
+      </text>
+
+      <path d="M640 110 Q740 160 760 280"
+        stroke="#c9573d"
+        stroke-width="4"
+        fill="none"
+        stroke-dasharray="6 3"/>
+
+      <polygon points="752,262 770,288 745,290"
+        fill="#c9573d"/>
+
+      <text x="700" y="200"
+        font-family="Arial"
+        font-size="10"
+        fill="#7a3a20"
+        font-style="italic">
+        2/3 partes se filtran
+      </text>
+
+      <!-- RI1 / RI4 -->
+      <rect x="590" y="30" width="90" height="30"
+        fill="none" stroke="#3a6b9f" stroke-width="2.5"/>
+
+      <text x="635" y="27"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10"
+        fill="#1f3a5c"
+        font-weight="700">
+        RI-1 / RI-4
+      </text>
+
+      <!-- 9ª -->
+      <ellipse cx="450" cy="230"
+        rx="60" ry="55"
+        fill="none"
+        stroke="#3a6b9f"
+        stroke-width="2.5"
+        stroke-dasharray="4 3"/>
+
+      <rect x="415" y="215" width="70" height="30"
+        fill="none" stroke="#3a6b9f" stroke-width="2.5"/>
+
+      <text x="450" y="212"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="13"
+        fill="#3a6b9f">
+        XX
+      </text>
+
+      <text x="450" y="330"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10"
+        fill="#1f3a5c"
+        font-weight="700">
+        9ª BOL — cerco sobre Estigarribia
+      </text>
+
+    </svg>
+  </div>
+
+  <div class="stage-body">
+
+    <span class="kicker">
+      Bolivia pierde tiempo
+    </span>
+
+    <p>
+      La 7ª División paraguaya logra retirarse mediante
+      una nueva picada de 14 kilómetros. Mientras tanto,
+      parte de la 2ª División consigue filtrarse por los
+      espacios que quedan abiertos en la tenaza boliviana.
+    </p>
+
+    <div class="highlight">
+      <b>Punto crítico:</b> el esfuerzo concentrado sobre
+      el pequeño batallón Estigarribia permite que una parte
+      importante de las fuerzas paraguayas escape.
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- =======================================================
+     ETAPA 5
+     ======================================================= -->
+
+<article class="stage" id="stage5">
+
+  <div class="stage-header">
+
+    <div class="stage-number">05</div>
+
+    <div class="stage-title">
+      Cierre de la brecha y rendición final
+    </div>
+
+    <div class="stage-date">
+      22 — 25 de mayo de 1934
+    </div>
+
+  </div>
+
+  <div class="map-wrap">
+
+    <div class="map-label">
+      Fin del cerco
+    </div>
+
+    <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg">
+
+      <rect width="900" height="460" fill="#cdb98a"/>
+
+      <polygon
+        points="380,0 420,0 460,460 340,460"
+        fill="#e2d6b5"/>
+
+      <g fill="#7c8f5a" opacity=".8">
+        <circle cx="120" cy="120" r="18"/>
+        <circle cx="700" cy="380" r="18"/>
+        <circle cx="150" cy="330" r="16"/>
+      </g>
+
+      <!-- RI9 -->
+      <rect x="600" y="60" width="90" height="34"
+        fill="none" stroke="#3a6b9f" stroke-width="3"/>
+
+      <text x="645" y="56"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="12"
+        fill="#1f3a5c"
+        font-weight="700">
+        Btn. RI-9 “Santa Cruz”
+      </text>
+
+      <path d="M645 95 Q680 150 660 210"
+        stroke="#3a6b9f"
+        stroke-width="4"
+        fill="none"/>
+
+      <polygon points="648,198 665,222 675,196"
+        fill="#3a6b9f"/>
+
+      <!-- two regiments -->
+      <rect x="600" y="230" width="90" height="40"
+        fill="none"
+        stroke="#c9573d"
+        stroke-width="2.5"
+        stroke-dasharray="3 2"/>
+
+      <text x="645" y="226"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="11"
+        fill="#8f3425"
+        font-weight="700">
+        2 Rgtos. PY
+      </text>
+
+      <ellipse cx="645" cy="250"
+        rx="58" ry="42"
+        fill="none"
+        stroke="#3a6b9f"
+        stroke-width="2"
+        stroke-dasharray="4 3"/>
+
+      <!-- Estigarribia -->
+      <rect x="420" y="215" width="60" height="30"
+        fill="none"
+        stroke="#c9573d"
+        stroke-width="2.5"
+        stroke-dasharray="3 2"/>
+
+      <text x="450" y="211"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="9"
+        fill="#c9573d">
+        II
+      </text>
+
+      <text x="450" y="262"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="10.5"
+        fill="#8f3425"
+        font-weight="700">
+        Btn. Estigarribia
+      </text>
+
+      <ellipse cx="450" cy="230"
+        rx="70" ry="60"
+        fill="none"
+        stroke="#3a6b9f"
+        stroke-width="2"
+        stroke-dasharray="4 3"/>
+
+      <ellipse cx="450" cy="230"
+        rx="88" ry="76"
+        fill="none"
+        stroke="#3a6b9f"
+        stroke-width="1.5"
+        stroke-dasharray="2 3"/>
+
+    </svg>
+  </div>
+
+  <div class="stage-body">
+
+    <span class="kicker">
+      El fin del cerco
+    </span>
+
+    <p>
+      El 22 de mayo, un batallón del RI-9 “Santa Cruz”
+      consigue cerrar la brecha y alcanza a cercar a dos
+      regimientos paraguayos rezagados, que finalmente
+      se rinden.
+    </p>
+
+    <p style="margin-top:12px;">
+      El batallón Estigarribia continúa resistiendo hasta
+      el 25 de mayo. Finalmente se rinde a las 12:30,
+      después de cinco días de aislamiento.
+    </p>
+
+    <div class="highlight">
+      <b>25 de mayo de 1934 · 12:30:</b>
+      termina la resistencia del batallón Estigarribia.
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- navegación -->
+<div class="stage-navigation">
+
+  <button class="nav-btn"
+    onclick="previousStage()">
+    ← ETAPA ANTERIOR
+  </button>
+
+  <button class="nav-btn next"
+    onclick="nextStage()">
+    SIGUIENTE ETAPA →
+  </button>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- =======================================================
+     RESULTADO
+     ======================================================= -->
+
+<section class="result" id="resultado">
+
+  <div class="container">
+
+    <div class="section-label">04 · Resultado</div>
+
+    <h2>Una victoria decisiva</h2>
+
+    <div class="result-card">
+
+      <p>
+        Bolivia no logró destruir por completo al Primer
+        Cuerpo paraguayo, pero Cañada Strongest se convirtió
+        en una de sus victorias más importantes de la Guerra
+        del Chaco, especialmente por el número de prisioneros
+        capturados y por el impacto sobre la moral de sus fuerzas.
+      </p>
+
+      <div class="stats">
+
+        <div class="stat">
+          <div class="stat-number">67</div>
+          <div class="stat-label">
+            Oficiales capturados
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-number">1.389</div>
+          <div class="stat-label">
+            Soldados capturados
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-number">5</div>
+          <div class="stat-label">
+            Días de resistencia del batallón Estigarribia
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-number">15</div>
+          <div class="stat-label">
+            Días de combate
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     COMPARTIR
+     ======================================================= -->
+
+<section class="share">
+
+  <div class="container">
+
+    <div class="share-card">
+
+      <div class="share-icon">▣</div>
+
+      <h2>Comparte esta reconstrucción</h2>
+
+      <p>
+        Esta página está diseñada para ser consultada
+        directamente desde un código QR en una exposición,
+        maqueta o espacio educativo.
+      </p>
+
+      <button class="share-button" onclick="sharePage()">
+        COMPARTIR
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
+
+<footer>
+
+  Reconstrucción esquemática con fines educativos,
+  elaborada a partir de la maqueta de sala y fuentes
+  históricas de la Guerra del Chaco.
+
+  <br><br>
+
+  Los mapas son representaciones simplificadas y
+  no constituyen cartografía militar exacta.
+
+  <br><br>
+
+  © Cañada Strongest · Historia de Bolivia
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   NAVEGACIÓN ENTRE ETAPAS
+   ========================================================= */
+
+let currentStage = 1;
+
+const totalStages = 5;
+
+function goToStage(number){
+
+  currentStage = number;
+
+  const element =
+    document.getElementById("stage" + number);
+
+  if(element){
+
+    element.scrollIntoView({
+      behavior:"smooth",
+      block:"start"
+    });
+
+  }
+
+  updateNavigation();
+
+}
+
+
+/* =========================================================
+   ACTUALIZAR BOTONES
+   ========================================================= */
+
+function updateNavigation(){
+
+  document
+    .querySelectorAll(".timeline-btn")
+    .forEach((button,index)=>{
+
+      button.classList.toggle(
+        "active",
+        index + 1 === currentStage
+      );
+
+    });
+
+  const progress =
+    ((currentStage) / (totalStages + 1)) * 100;
+
+  document
+    .getElementById("progressBar")
+    .style.width = progress + "%";
+}
+
+
+/* =========================================================
+   SIGUIENTE / ANTERIOR
+   ========================================================= */
+
+function nextStage(){
+
+  if(currentStage < totalStages){
+
+    goToStage(currentStage + 1);
+
+  }else{
+
+    document
+      .getElementById("resultado")
+      .scrollIntoView({
+        behavior:"smooth"
+      });
+
+  }
+
+}
+
+
+function previousStage(){
+
+  if(currentStage > 1){
+
+    goToStage(currentStage - 1);
+
+  }else{
+
+    document
+      .getElementById("contexto")
+      .scrollIntoView({
+        behavior:"smooth"
+      });
+
+  }
+
+}
+
+
+/* =========================================================
+   COMPARTIR
+   ========================================================= */
+
+async function sharePage(){
+
+  const shareData = {
+
+    title:"Batalla de Cañada Strongest",
+
+    text:
+      "Reconstrucción histórica por etapas de la Batalla de Cañada Strongest, 1934.",
+
+    url:window.location.href
+
+  };
+
+  try{
+
+    if(navigator.share){
+
+      await navigator.share(shareData);
+
+    }else{
+
+      await navigator.clipboard.writeText(
+        window.location.href
+      );
+
+      alert(
+        "Enlace copiado. Puedes pegarlo para compartir la reconstrucción."
+      );
+
+    }
+
+  }catch(error){
+
+    console.log("Compartir cancelado.");
+
+  }
+
+}
+
+
+/* =========================================================
+   DETECTAR ETAPA VISIBLE AL HACER SCROLL
+   ========================================================= */
+
+const observer =
+  new IntersectionObserver(
+
+    entries => {
+
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+          const number =
+            Number(
+              entry.target.id.replace("stage","")
+            );
+
+          if(number){
+
+            currentStage = number;
+            updateNavigation();
+
+          }
+
+        }
+
+      });
+
+    },
+
+    {
+      threshold:.45
+    }
+
+  );
+
+
+document
+  .querySelectorAll(".stage")
+  .forEach(stage => {
+
+    observer.observe(stage);
+
+  });
+
+
+/* =========================================================
+   INICIO
+   ========================================================= */
+
+updateNavigation();
+
+</script>
+
+</body>
+</html>
